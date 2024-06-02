@@ -1,0 +1,114 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<h3 class="text-center text-warning mt-5" style="font-family: Playfair Display">
+    My Skills
+</h3>
+<div class="container">
+    <div class="row ">
+        <div class="col-sm-2 text-center ms-5">
+           <!--first column--> 
+           
+            <ul>
+                <!--html--> 
+                <li><img src="{% static 'skill/images/html.png' %}" alt="html"  class="border border-white rounded-circle mt-5"width="70px", height="70px"> <br> <P class="text-white mt-1">HTML</P><br>
+                </li>
+                
+                <!--django column--> 
+                <li>
+                    <img src="{% static 'skill/images/django.jpeg' %}" alt="" class="border border-white rounded-circle mt-3 "width="70px", height="70px"><br><P class="text-white mt-1">Django</P><br>
+                    
+                </li>
+                <!--C++-->
+                <li>
+                    <img src="{% static 'skill/images/c++.jpeg' %}" alt=""class="border border-white rounded-circle mt-3"width="70px", height="70px"><br><P class="text-white mt-1">C++</P><br>
+                        
+                </li>
+                <!--SDLC-->
+                <li>
+                    <img src="{% static 'skill/images/sdlc.png' %}" alt="html"  class="border border-white rounded-circle mt-3"width="70px", height="70px"><br><P class="text-white mt-1">SDLC</P><br>
+                       
+                </li>
+             
+
+            </ul>
+        </div>
+        <div class="col-sm-2 text-center ms-5">
+            <!--second column-->
+            <div>
+                <ul> 
+                    <!--css-->
+                    <li>
+                        <img src="{% static 'skill/images/CSSLogo.jpg' %}" alt="" class="border border-white rounded-circle mt-5"width="70px", height="70px"><br><P class="text-white mt-1">CSS</P><br>
+                         
+                    </li>
+                   
+                    <!--Rest Framework-->
+                    <li><img src="{% static 'skill/images/rest.jpeg' %}" alt=""class="border border-white rounded-circle mt-3"width="70px", height="70px"><br><P class="text-white mt-1">Rest Framwork</P><br> 
+                    </li>
+                    <!--java-->
+                    <li><img src="{% static 'skill/images/java.jpeg' %}" alt="" class="border border-white rounded-circle mt-3"width="70px", height="70px"><br><P class="text-white mt-1">Core Java</P><br>                      
+                    </li>
+                    <!--Machine Learning-->
+
+                    <li>
+                        <img src="{% static 'skill/images/machine.png' %}" alt="html"  class="border border-white rounded-circle mt-3"width="70px", height="70px"><br><P class="text-white mt-1">Machine Learning</P><br>
+                        
+                    </li>   
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-2 text-center ms-5">
+            <!--Third column--> 
+           <div>
+                <ul>
+                    <!--javascript-->
+                    <li>
+                        <img src="{% static 'skill/images/R.png' %}" alt=""class="border border-white rounded-circle mt-5"width="70px", height="70px"><br><P class="text-white mt-1">JavaScript</P><br>
+                    </li>
+                    <!--MySQL-->
+                        
+                    <li><img src="{% static 'skill/images/mysql.jpeg' %}" alt="html"  class="border border-white rounded-circle  mt-3"width="70px", height="70px"><br><P class="text-white mt-1">MySQL</P><br>
+                    </li>
+                    <!--Data structure-->
+                    <li>
+                        <img src="{% static 'skill/images/data_structure.png' %}" alt="html"  class="border border-white rounded-circle mt-3"width="70px", height="70px"><br><P class="text-white mt-1">DSA</P><br>  
+                    </li>
+
+                    <!--Docker-->
+                    <li>
+                        <img src="{% static 'skill/images/dd.jpg' %}" alt="html"  class="border border-white rounded-circle mt-3"width="70px", height="70px"><br><P class="text-white mt-1">Docker</P><br>
+                       
+                    </li>
+
+                </ul>
+           </div>
+        </div>
+
+        <div class="col-sm-2 text-center ms-5">
+            <!--forth column--> 
+           <div>
+                <ul>
+                    <!--Bootstrap--> 
+                    <li>
+                        <img src="{% static 'skill/images/bootstrap.png' %}" alt="bootstrap" class="border border-white rounded-circle  mt-5"width="70px", height="70px"><br><P class="text-white mt-1">bootstrap</P><br>
+                        
+                    </li>
+                    
+                    <!--Python--> 
+                    <li>
+                        <img src="{% static 'skill/images/python.jpeg' %}" alt=""class="border border-white rounded-circle mt-3"width="70px", height="70px"><br><P class="text-white mt-1">Python</P><br>
+                    </li>
+                    <!--AWS-->
+                    <li>
+                        <img src="{% static 'skill/images/AWSLogo.jpg' %}" alt="html"  class="border border-white rounded-circle mt-3"width="70px", height="70px"><br><P class="text-white mt-1">AWS</P><br>
+                       
+                    </li>   
+                </ul>
+           </div>
+        </div>
+ 
+    </div>
+</div>
+{% endblock content %}

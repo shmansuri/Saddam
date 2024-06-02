@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %}
+
+
+{% block content %}
+
+
+<div class="containe  ">
+    <div class="row"> 
+        <div class="col-sm-2">
+
+        </div>        
+        <div class="col-sm-5  ">  
+            <form action="" method="post">
+                {% csrf_token %}
+                <h3 class=" mt-4 mb-5 text-warning text-center " style="font-family: Playfair Display">Contact Me</h3>                   
+                    <input class="mt-3 form-control" type="text" id="name" name="name" placeholder="Enter Your Name" >                      
+                    <input class="mt-3 form-control" type="email" id="email" name="email" placeholder="Email Address" >
+                
+                    <input class="mt-3 form-control" type="text" id="subject" name="subject" placeholder="Enter Subject" >
+                    <textarea class="mt-3 form-control" name="msg" id="message" cols="75" rows="5" placeholder="Enter Your Message"></textarea>                      
+                    <div class="d-grid">
+                        <button class="mt-3 btn btn-primary " type="submit" class="btn btn-primary rounded mt-4">sent</button>
+                    </div>
+            </form> 
+                    
+        </div>
+        <div class="col-sm-3  mt-4 text-success text-center ms-5">
+            <h3 class="mb-5"><br><br><br></h3>
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p class="text-white" style="font-size: 12px;">Laxmi Nagar, Delhi</p>
+                </li>
+                <li class="mt-2">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i><p class="text-white" style="font-size: 12px;">+91 8651555901</p>
+
+                </li>
+                <li class="mt-2">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p class="text-white" style="font-size: 12px;">iamshmansuri@gmail.com</p>
+                </li>
+              
+                
+            </ul>
+        </div>
+                
+    </div>
+</div>
+{% endblock content %}
